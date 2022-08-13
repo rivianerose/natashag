@@ -1,0 +1,285 @@
+@charset "UTF-8"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 30vh auto 25vh ;
+    grid-template-areas: " header header"
+                         "main main " 
+                         "footer footer " ;
+}
+
+header {
+grid-area: header;
+background-color: white;
+}
+
+main {
+grid-area: main;
+background-color: rgb(255, 255, 255);
+font-family: 'Montserrat', helvetica,  sans-serif;
+}
+
+footer {
+grid-area: footer;
+background-color: white;
+}
+
+.logo {
+    margin: 20px 0px 0px 100px;
+}
+
+.menu {
+    text-align: center;
+    list-style: none;
+    font-family: 'Montserrat', helvetica,  sans-serif;
+    font-weight: 700;
+    color: rgb(68, 68, 68);
+    display: block;
+}
+.menu  ul {
+    list-style: none;
+}
+.menu  li {
+    display: inline-block;
+    padding: 15px;
+    margin: 50px 0px 0px 0px;  
+    transition: 0.5s; 
+}
+.menu li:hover {
+cursor: pointer;
+color: pink;
+}
+
+.lista {
+    text-align: right;
+    margin: -80px 100px 0px 0px;
+    display: block;
+    
+}
+.lista  ul {
+    list-style: none;
+}
+
+.lista li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.lista li:hover {
+cursor: pointer;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    margin: -80px 0px 0px 800px;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #000000;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #ff4dc4;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 3px solid #000000;
+    background: #ffcaed;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    background-image: url(./fotos/favicon.png);
+    background-repeat: no-repeat;
+    background-size:  100%;      
+  }
+
+  .wrap{
+    width: 40%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .banner {
+    width: 98.9vw;
+  }
+
+ .infobar {
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0;
+    text-align: center;
+    background: #fecccd;
+    padding: 36px 0!important;
+}
+
+.infobar li  {
+    display: inline-block;
+    padding: 15px;
+}
+
+.fotografia {
+    margin: 0 auto;
+    display: block;
+    width: 800px;
+ 
+}
+.tamanhos h2 {
+  margin: 0px 390px 10px 0px;
+}
+.tamanhos {
+    margin: 120px 70px 40px 0px;
+    list-style: none;
+    text-align: end;
+}
+
+.tamanhos ul {
+    font-size: 20px;
+}
+
+.tamanhos li {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 7px;
+    transition: 0.5s;
+}
+
+.tamanhos li:hover {
+background-color: rgb(243, 69, 98);
+cursor: pointer;
+
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.produtos img {
+    width: 270px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.products {
+    border: 1px solid white; 
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.products h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.products h2 {
+    font-size: 20px;
+    
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #000000;
+	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+	background-color:#000000;
+	border:1px solid #000000;
+	display: inline-block; 
+    margin: 20px 0px 0px 90px; 
+	cursor:pointer;
+	color:#f57897;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:8px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #deefff;
+    
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+	background-color:#000000;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.areadeentrega {
+    display: flex;
+    justify-content:center;
+    margin: 50px 0px 100px 0px;
+}
+
+.areadeentrega img {
+    width: 375px;
+  
+}
+.entrega2 {
+   
+}
+
+.footer  {
+    list-style: none;
+    margin: 20px 0px 0px 0px ;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+footer li {
+    list-style: none;
+}
+   li.imagem1  {
+        display: inline-block;
+    }
+
+    .imagem {
+        border-radius: 10px;
+        width: 250px;
+    }
+
+    .footer3 {
+        
+    }
+
+    .footer3 li {
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .footer3 h2 {
+        text-align: center;
+    }
+
+    .vallionstech {
+        width: 150px;
+        border-radius: 40px;
+    }
+    .footer h2 {
+        text-align: center;
+        font-size: 18px;  
+      }
