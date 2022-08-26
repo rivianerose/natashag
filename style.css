@@ -23,6 +23,9 @@
 header {
 grid-area: header;
 background-color: white;
+position: fixed;
+top: 0;
+width: 100vw;
 }
 
 main {
@@ -48,6 +51,12 @@ background-color: white;
     color: rgb(68, 68, 68);
     display: block;
 }
+.menu a {
+    text-decoration: none;
+    font-family: 'Montserrat', helvetica,  sans-serif;
+    font-weight: 700;
+    color: rgb(68, 68, 68);
+}
 .menu  ul {
     list-style: none;
 }
@@ -60,6 +69,11 @@ background-color: white;
 .menu li:hover {
 cursor: pointer;
 color: pink;
+}
+
+.menu li a:hover {
+    cursor: pointer;
+    color: pink;
 }
 
 .lista {
@@ -233,6 +247,7 @@ cursor: pointer;
 .areadeentrega {
     display: flex;
     justify-content:center;
+    flex-wrap: wrap;
     margin: 50px 0px 100px 0px;
 }
 
@@ -250,6 +265,7 @@ cursor: pointer;
     padding: 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
